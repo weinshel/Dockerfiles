@@ -1,13 +1,9 @@
-name: Docker
+# builds a docker container and publishes it to GitHub packages
+# https://docs.github.com/en/actions/use-cases-and-examples/publishing-packages/publishing-docker-images#publishing-images-to-github-packages
 
-# This workflow uses actions that are not certified by GitHub.
-# They are provided by a third-party and are governed by
-# separate terms of service, privacy policy, and support
-# documentation.
+name: Create and publish a Docker image
 
 on:
-  schedule:
-    - cron: '29 23 * * *'
   push:
     branches: [ "main" ]
     # Publish semver tags as releases.
