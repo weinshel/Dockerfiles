@@ -8,7 +8,10 @@ RUN apt-get -q --no-allow-insecure-repositories update \
   texlive \
   texlive-latex-extra \
   texlive-publishers \
+  texlive-fonts-extra \
+  texlive-extra-utils \
   latexmk \
+  latexdiff \
   lmodern \
   pandoc \
   && rm -rf /var/lib/apt/lists/*
