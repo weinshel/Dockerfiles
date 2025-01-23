@@ -1,5 +1,6 @@
-# typeset-docker
+# Dockerfiles
 
-Docker container for typesetting documents, e.g. for use with GitHub Actions.
+Dockerfiles for typesetting documents with TeX, using R, etc.
+See the subfolders for each Dockerfile and directions to use or run.
 
-You can use this container with a GitHub Action to have a document typeset on every commit to a repository; see `github-action-sample.yml` for an example.
+Some containers, e.g. `ghcr.io/weinshel/typeset`, are published as images.
