@@ -1,0 +1,14 @@
+services:
+  typeset-r:
+    build: .
+    volumes:
+      - ".:/workspace"
+      - "renv-cache:/renv-cache"
+    environment:
+      - "RENV_PATHS_CACHE=/renv-cache"
+    stdin_open: true # docker run -i
+    tty: true        # docker run -t
+
+volumes:
+  renv-cache:
+    external: true
