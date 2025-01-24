@@ -15,6 +15,6 @@ $ docker volume create renv-cache
 And run it using:
 
 ```sh
-$ docker compose run --rm
+$ docker compose run --rm typeset-r
 ```
 
